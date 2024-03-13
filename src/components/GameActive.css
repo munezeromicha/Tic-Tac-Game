@@ -1,0 +1,101 @@
+.container{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+.top{
+    display: flex;
+    gap: 40px;
+}
+.logo{
+    width: 20%;
+    height: 25px;
+
+}
+.btn-1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+background-color: #1F3641;
+width: 100%;
+height: auto;
+gap: 20px;
+box-shadow: 0px 9px 0px -1px rgba(16,33,42,0.87);
+-webkit-box-shadow: 0px 5px 0px -1px rgba(16,33,42,0.87);
+-moz-box-shadow: 0px 9px 0px -1px rgba(16,33,42,0.87);
+}
+.img-2{
+width: 20%;
+height: 20%;
+}
+.btn-2{
+    background-color: #DBE8ED;
+    box-shadow: 0px 9px 0px -1px rgba(151,151,151,0.87);
+-webkit-box-shadow: 0px 5px 0px -1px rgba(151,151,151,0.87);
+-moz-box-shadow: 0px 9px 0px -1px rgba(151,151,151,0.87);
+}
+.middle{
+    display: flex;
+    gap: 40px;
+}
+.middle-2{
+    display: flex;
+    gap: 40px;
+}
+.middle-3{
+    display: flex;
+    gap: 40px;
+}
+.mid-btn{
+    background-color: #1F3641;
+    box-shadow: 0px 9px 0px -1px rgba(16,33,42,0.87);
+    -webkit-box-shadow: 0px 6px 0px -1px rgba(16,33,42,0.87);
+    -moz-box-shadow: 0px 9px 0px -1px rgba(16,33,42,0.87);
+}
+.mid-btn-7{
+    width: 8rem;
+    background-color: #1F3641;
+    box-shadow: 0px 9px 0px -1px rgba(16,33,42,0.87);
+    -webkit-box-shadow: 0px 6px 0px -1px rgba(16,33,42,0.87);
+    -moz-box-shadow: 0px 9px 0px -1px rgba(16,33,42,0.87);
+}
+.inside-btn{
+    display: flex;
+    flex-direction: column;
+
+    
+}
+.bottom{
+    display: flex;
+    gap: 40px;
+}
+.mid-btn-11{
+    width: 8rem;
+    height: 40px;
+    background-color: #31C3BD;
+    justify-content: center;
+    align-items: center;
+}
+.mid-btn-12{
+    width: 8rem;
+    height: 40px;
+    background-color: #A8BFC9;
+    justify-content: center;
+    align-items: center;
+}
+.mid-btn-13{
+    width: 8rem;
+    height: 40px;
+    background-color: #F2B137;
+    justify-content: center;
+    align-items: center;
+}
+.text-1{
+    color: #1A2A33;
+    font-size: 10px;
+}
+.text-2{
+    color: #1A2A33;
+    font-size: 15px;
+    font-weight: 600;
+}
