@@ -1,4 +1,3 @@
-import React from 'react';
 import './GameActive.css'
 import logo from '../assets/logo.svg'
 import iconx from '../assets/icon-x.png'

@@ -1,4 +1,3 @@
-import React from 'react';
 import  {NewGameMenu}  from './components/newGameMenu';
 import './App.css'
 import { BrowserRouter, Routes, Route } from 'react-router-dom';

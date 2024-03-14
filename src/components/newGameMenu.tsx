@@ -1,4 +1,3 @@
-import React from 'react';
 import '../components/NewGame.css'
 import logo from '../assets/logo.png';
 import iconX from '../assets/icon-x.png';
