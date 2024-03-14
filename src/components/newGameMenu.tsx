@@ -12,16 +12,16 @@ export const NewGameMenu = () => {
         <h5 className='text-5'>PICK PLAYER 1'S MARK</h5>
         <div className="innerBox">
           <div className="img-x-div">
-            <img src={iconX} className='img img-x'/>
+            <img src={iconX} className='img'/>
           </div>
           <div className="img-o-div">
-            <img src={iconOut} className='img img-o'/>
+            <img src={iconOut} className='img'/>
           </div>
         </div>
         <h4 className='h-bottom'>REMEMBER : X GOES FIRST</h4>
       </div>
-      <button className='newGameBtnCPU'>NEW GAME (VS CPU)</button>
-      <button className='newGameBtnPlayer' onClick={()=>navigate('/game')}>NEW GAME (VS PLAYER)</button>
+      <button className='newGameBtnCPU' onClick={()=> navigate('/game')}>NEW GAME (VS CPU)</button>
+      <button className='newGameBtnPlayer' onClick={()=>navigate('/players')}>NEW GAME (VS PLAYER)</button>
     </div>
   )
 }
