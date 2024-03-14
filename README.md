@@ -1,5 +1,7 @@
 # React + TypeScript + Vite
 
+[![Netlify Status](https://api.netlify.com/api/v1/badges/df5251d2-deea-49fe-90aa-04f64fd1ef9a/deploy-status)](https://app.netlify.com/sites/tic-tac-game-250/deploys)
+
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
 Currently, two official plugins are available:
