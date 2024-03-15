@@ -2,7 +2,6 @@ import './SoloWon.css'
 import logo from '../assets/logo.svg'
 import iconx from '../assets/icon-x.png'
 import restart from '../assets/icon-restart.svg';
-import iconxout from '../assets/icon-x-outline.svg'
 import icono from '../assets/icon-o.png'
 import { useNavigate } from 'react-router-dom';
 export const SoloWon = () => {

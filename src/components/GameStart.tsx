@@ -1,4 +1,3 @@
-import React from 'react'
 import logo from '../assets/logo.svg'
 import iconx from '../assets/icon-x.png'
 import restart from '../assets/icon-restart.svg';

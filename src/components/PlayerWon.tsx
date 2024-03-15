@@ -2,8 +2,6 @@ import './PlayerWon.css'
 import logo from '../assets/logo.svg'
 import iconx from '../assets/icon-x.png'
 import restart from '../assets/icon-restart.svg';
-// import iconxout from '../assets/icon-x-outline.svg'
-import icono from '../assets/icon-o.svg'
 import Yellowicon from '../assets/blue-i-o.svg'
 import { useNavigate } from 'react-router-dom';
 export const PlayerWon = () => {
