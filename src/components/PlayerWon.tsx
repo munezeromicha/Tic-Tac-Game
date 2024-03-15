@@ -4,7 +4,7 @@ import iconx from '../assets/icon-x.png'
 import restart from '../assets/icon-restart.svg';
 // import iconxout from '../assets/icon-x-outline.svg'
 import icono from '../assets/icon-o.svg'
-import Yellowicon from '../assets/icon-o.png'
+import Yellowicon from '../assets/blue-i-o.svg'
 import { useNavigate } from 'react-router-dom';
 export const PlayerWon = () => {
     const navigate = useNavigate();
@@ -23,15 +23,15 @@ export const PlayerWon = () => {
         <div className='middle'>
             <button className='mid-btn'><img src='' /></button>
             <button className='mid-btn' ><img src={iconx} /></button>
-            <button className='mid-btn-7'><img src={icono} /></button>
+            <button className='Yellow-back'><img src={Yellowicon} /></button>
         </div>
         <div className='middle-2'>
             <button className='mid-btn'><img src={iconx} /></button>
-            <button className='mid-btn-7'><img src={icono} /></button>
+            <button className='Yellow-back'><img src={Yellowicon} /></button>
             <button className='mid-btn'><img src={iconx} /></button>
         </div>
         <div className='middle-3'>
-            <button className='mid-btn-7'><img src={icono}/></button>
+            <button className='Yellow-back'><img src={Yellowicon}/></button>
             <button className='mid-btn'><img src={Yellowicon} /></button>
             <button className='mid-btn'><img src={iconx} /></button>
         </div>

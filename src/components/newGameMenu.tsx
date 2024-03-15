@@ -6,6 +6,7 @@ import { useNavigate } from 'react-router-dom';
 export const NewGameMenu = () => {
   const navigate = useNavigate();
   return (
+
     <div className='newGameDiv'>
       <img src={logo} id='image'/>
       <div className="pickBox">

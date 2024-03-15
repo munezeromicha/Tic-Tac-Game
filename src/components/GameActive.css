@@ -1,101 +1,136 @@
-.container{
-    display: flex;
-    flex-direction: column;
-    gap: 30px;
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
 }
-.top{
-    display: flex;
-    gap: 40px;
+.top {
+  display: flex;
+  gap: 40px;
 }
-.logo{
-    width: 20%;
-    height: 25px;
+.logo {
+  width: 20%;
+  height: 25px;
+}
 
+.logo {
+  animation: wiggle 2s linear infinite;
 }
-.btn-1{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-background-color: #1F3641;
-width: 100%;
-height: auto;
-gap: 20px;
-box-shadow: 0px 9px 0px -1px rgba(16,33,42,0.87);
--webkit-box-shadow: 0px 5px 0px -1px rgba(16,33,42,0.87);
--moz-box-shadow: 0px 9px 0px -1px rgba(16,33,42,0.87);
-}
-.img-2{
-width: 20%;
-height: 20%;
-}
-.btn-2{
-    background-color: #DBE8ED;
-    box-shadow: 0px 9px 0px -1px rgba(151,151,151,0.87);
--webkit-box-shadow: 0px 5px 0px -1px rgba(151,151,151,0.87);
--moz-box-shadow: 0px 9px 0px -1px rgba(151,151,151,0.87);
-}
-.middle{
-    display: flex;
-    gap: 40px;
-}
-.middle-2{
-    display: flex;
-    gap: 40px;
-}
-.middle-3{
-    display: flex;
-    gap: 40px;
-}
-.mid-btn{
-    background-color: #1F3641;
-    box-shadow: 0px 9px 0px -1px rgba(16,33,42,0.87);
-    -webkit-box-shadow: 0px 6px 0px -1px rgba(16,33,42,0.87);
-    -moz-box-shadow: 0px 9px 0px -1px rgba(16,33,42,0.87);
-}
-.mid-btn-7{
-    width: 8rem;
-    background-color: #1F3641;
-    box-shadow: 0px 9px 0px -1px rgba(16,33,42,0.87);
-    -webkit-box-shadow: 0px 6px 0px -1px rgba(16,33,42,0.87);
-    -moz-box-shadow: 0px 9px 0px -1px rgba(16,33,42,0.87);
-}
-.inside-btn{
-    display: flex;
-    flex-direction: column;
 
-    
+/* Keyframes */
+@keyframes wiggle {
+  0%,
+  7% {
+    transform: rotateZ(0);
+  }
+  15% {
+    transform: rotateZ(-15deg);
+  }
+  20% {
+    transform: rotateZ(10deg);
+  }
+  25% {
+    transform: rotateZ(-10deg);
+  }
+  30% {
+    transform: rotateZ(6deg);
+  }
+  35% {
+    transform: rotateZ(-4deg);
+  }
+  40%,
+  100% {
+    transform: rotateZ(0);
+  }
 }
-.bottom{
-    display: flex;
-    gap: 40px;
+
+.logo {
+  left: calc(50% - 3em);
+  top: calc(50% - 2em);
+  transform-origin: 50% 5em;
 }
-.mid-btn-11{
-    width: 8rem;
-    height: 40px;
-    background-color: #31C3BD;
-    justify-content: center;
-    align-items: center;
+
+.btn-1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #1f3641;
+  width: 100%;
+  height: auto;
+  gap: 20px;
+  box-shadow: 0px 9px 0px -1px rgba(16, 33, 42, 0.87);
+  -webkit-box-shadow: 0px 5px 0px -1px rgba(16, 33, 42, 0.87);
+  -moz-box-shadow: 0px 9px 0px -1px rgba(16, 33, 42, 0.87);
 }
-.mid-btn-12{
-    width: 8rem;
-    height: 40px;
-    background-color: #A8BFC9;
-    justify-content: center;
-    align-items: center;
+.img-2 {
+  width: 20%;
+  height: 20%;
 }
-.mid-btn-13{
-    width: 8rem;
-    height: 40px;
-    background-color: #F2B137;
-    justify-content: center;
-    align-items: center;
+.btn-2 {
+  background-color: #dbe8ed;
+  box-shadow: 0px 9px 0px -1px rgba(151, 151, 151, 0.87);
+  -webkit-box-shadow: 0px 5px 0px -1px rgba(151, 151, 151, 0.87);
+  -moz-box-shadow: 0px 9px 0px -1px rgba(151, 151, 151, 0.87);
 }
-.text-1{
-    color: #1A2A33;
-    font-size: 10px;
+.middle {
+  display: flex;
+  gap: 40px;
 }
-.text-2{
-    color: #1A2A33;
-    font-size: 15px;
-    font-weight: 600;
+.middle-2 {
+  display: flex;
+  gap: 40px;
+}
+.middle-3 {
+  display: flex;
+  gap: 40px;
+}
+.mid-btn {
+  background-color: #1f3641;
+  box-shadow: 0px 9px 0px -1px rgba(16, 33, 42, 0.87);
+  -webkit-box-shadow: 0px 6px 0px -1px rgba(16, 33, 42, 0.87);
+  -moz-box-shadow: 0px 9px 0px -1px rgba(16, 33, 42, 0.87);
+}
+.mid-btn-7 {
+  width: 8rem;
+  background-color: #1f3641;
+  box-shadow: 0px 9px 0px -1px rgba(16, 33, 42, 0.87);
+  -webkit-box-shadow: 0px 6px 0px -1px rgba(16, 33, 42, 0.87);
+  -moz-box-shadow: 0px 9px 0px -1px rgba(16, 33, 42, 0.87);
+}
+.inside-btn {
+  display: flex;
+  flex-direction: column;
+}
+.bottom {
+  display: flex;
+  gap: 40px;
+}
+.mid-btn-11 {
+  width: 8rem;
+  height: 40px;
+  background-color: #31c3bd;
+  justify-content: center;
+  align-items: center;
+}
+.mid-btn-12 {
+  width: 8rem;
+  height: 40px;
+  background-color: #a8bfc9;
+  justify-content: center;
+  align-items: center;
+}
+.mid-btn-13 {
+  width: 8rem;
+  height: 40px;
+  background-color: #f2b137;
+  justify-content: center;
+  align-items: center;
+}
+.text-1 {
+  color: #1a2a33;
+  font-size: 10px;
+}
+.text-2 {
+  color: #1a2a33;
+  font-size: 15px;
+  font-weight: 600;
 }
