@@ -5,7 +5,16 @@ import restart from '../assets/icon-restart.svg';
 import iconxout from '../assets/icon-x-outline.svg'
 import icono from '../assets/icon-o.png'
 import { useNavigate } from 'react-router-dom';
-export const GameActive = () => {
+import React, { useState } from "react";
+import Popup from "./Popup";
+
+
+export const GameActive: React.FC = () => {
+    const [showPopup, setShowPopup] = useState(false);
+    const togglePopup = () => {
+        setShowPopup(!showPopup);
+      };
+
     const navigate = useNavigate();
   return (
     <div className='container'>
@@ -15,7 +24,8 @@ export const GameActive = () => {
             <button className='btn-1' onClick={()=>navigate('/return')}><img src={iconx} alt="" className='img-2'/><h3>TURN</h3></button>
             </div>
             <div>
-            <button className='btn-2' popovertarget="trypopover"><img src={restart} alt="" /></button>
+            <button className='btn-2' onClick={togglePopup}><img src={restart} alt="" /></button>
+            {showPopup && <Popup onClose={togglePopup} />}{" "}
             </div>
         </div>
         <div className='middle'>
@@ -34,20 +44,12 @@ export const GameActive = () => {
             <button className='mid-btn'><img src={iconx} /></button>
         </div>
         <div className='bottom'>
-            <button className='mid-btn-11'><span className='inside-btn'><p className='text-1'>X (YOU)</p><p className='text-2'>14</p></span></button>
-            <button className='mid-btn-12'><span className='inside-btn' onClick={()=>navigate('/solo')}><p className='text-1'>TIES</p><p className='text-2'>32</p></span></button>
+            <button className='mid-btn-11'><span className='inside-btn' onClick={()=>navigate('/solo')}><p className='text-1'>X (YOU)</p><p className='text-2'>14</p></span></button>
+            <button className='mid-btn-12'><span className='inside-btn'><p className='text-1'>TIES</p><p className='text-2'>32</p></span></button>
             <button className='mid-btn-13'><span className='inside-btn'><p className='text-1'>O (CPU)</p><p className='text-2'>11</p></span></button>
+            
         </div>
 
-        <div popover="auto" id="trypopover">
-        <div className='inside-pop'>
-        <p id='text-popup'>RESTART GAME?</p>
-        <div className='pop-btn'>
-            <button className='quit'>Quit</button>
-            <button className='round' onClick={()=> navigate('/restart')}>NEXT ROUND</button>
-        </div>
-        </div>
-    </div>
     </div>
   )
 }

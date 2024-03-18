@@ -34,9 +34,9 @@ export const MultiplePlayer = () => {
             <button className='mid-btn'><img src={iconx} /></button>
         </div>
         <div className='bottom'>
-            <button className='mid-btn-11'><span className='inside-btn'><p className='text-1'>X (P2)</p><p className='text-2'>14</p></span></button>
+            <button className='mid-btn-11'><span className='inside-btn'><p className='text-1'>X (P2)</p><p className='text-2'>11</p></span></button>
             <button className='mid-btn-12'><span className='inside-btn'><p className='text-1'>TIES</p><p className='text-2'>32</p></span></button>
-            <button className='mid-btn-13' onClick={()=> navigate('/playerWon')}><span className='inside-btn'><p className='text-1'>O (P1)</p><p className='text-2'>11</p></span></button>
+            <button className='mid-btn-13' onClick={()=> navigate('/playerWon')}><span className='inside-btn'><p className='text-1'>O (P1)</p><p className='text-2'>14</p></span></button>
         </div>
     </div>
   )
