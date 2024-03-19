@@ -76,7 +76,7 @@
     animation: fadeIn 2s ease forwards;
 }
 #image{
-  width: 7%;
+  width: 100px;
   height: 60px;
 }
 
