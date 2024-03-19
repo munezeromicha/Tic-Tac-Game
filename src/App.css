@@ -1,26 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
 
-*{
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-body{
-  width: 100%;
-  background-color: #1A2A33;
-  height: 100vh;
-
-}
-.container{
-  /* background-color: #1A2A33; */
-  /* height: 100vh; */
-  width: 100vw;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-@media screen and (max-width: 320px){
-  .container{
+/* .container {
     width: 100%;
-  }
-}
+    min-height: 100vh;
+    display: flex;
+  } */

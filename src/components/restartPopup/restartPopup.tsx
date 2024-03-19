@@ -1,5 +1,5 @@
 import React from "react"; 
-import './Popup.css';
+import './restartPopup.css';
 import { useNavigate } from 'react-router-dom';
 interface PopupProps {
   onClose: () => void; // Function to close the popup

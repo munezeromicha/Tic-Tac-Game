@@ -6,7 +6,7 @@ import iconxout from '../assets/icon-x-outline.svg'
 import icono from '../assets/icon-o.png'
 import { useNavigate } from 'react-router-dom';
 import React, { useState } from "react";
-import Popup from "./Popup";
+import Popup from "./restartPopup/restartPopup";
 
 
 export const GameActive: React.FC = () => {
@@ -17,7 +17,7 @@ export const GameActive: React.FC = () => {
 
     const navigate = useNavigate();
   return (
-    <div className='container'>
+    <div className='container-1'>
         <div className='top'>
             <img src={logo} alt="logo" className='logo'/>
             <div>
