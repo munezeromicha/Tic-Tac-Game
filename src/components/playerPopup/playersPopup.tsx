@@ -11,14 +11,16 @@ const PlayersPopup: React.FC<PopupProps> = ({ onClose }) => {
   return (
     <div className="popup-overlay" onClick={onClose}>
       <div className="popup-content" onClick={(e) => e.stopPropagation()}>
-        <div className="inside-pop">
-            <p className="p-pop">PLAYER 1 WINS!</p>
-        <p id="text-popup"><img src={iconO} alt="" />TAKES THE ROUND</p>
-        <div className="button-container">
-          <button className="popup-button-quit" onClick={onClose}>QUIT</button>
-          <button className="popup-button-round" onClick={()=>navigate('/restart')}>NEXT ROUND</button>
+
+      <div className="centered-content-player">
+        <p className="p-pop-player">PLAYER 1 WINS!</p>
+        <p id="text-player"><img src={iconO} alt=""  className="iconx-won-player"/>TAKES THE ROUND</p>
+        <div className="button-container-player">
+          <button className="popup-button-quit-player" onClick={onClose}>QUIT</button>
+          <button className="popup-button-round-player" onClick={()=>navigate('/restart')}>NEXT ROUND</button>
         </div>
         </div>
+
       </div>
     </div>
   );

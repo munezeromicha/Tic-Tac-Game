@@ -11,14 +11,16 @@ const SoloPopup: React.FC<PopupProps> = ({ onClose }) => {
   return (
     <div className="popup-overlay-solo" onClick={onClose}>
       <div className="popup-content-solo" onClick={(e) => e.stopPropagation()}>
-        <div className="inside-pop-solo">
-            <p className="p-pop-solo">YOU WON!</p>
-            <p id="text-popup-solo"><img src={iconBlue} alt="" />TAKES THE ROUND</p>
+
+        <div className="centered-content">
+        <p className="p-pop-solo">YOU WON!</p>
+        <p id="text-solo"><img src={iconBlue} alt=""  className="iconx-won"/>TAKES THE ROUND</p>
         <div className="button-container-solo">
           <button className="popup-button-quit-solo" onClick={onClose}>QUIT</button>
           <button className="popup-button-round-solo" onClick={()=>navigate('/restart')}>NEXT ROUND</button>
         </div>
         </div>
+        
       </div>
     </div>
   );

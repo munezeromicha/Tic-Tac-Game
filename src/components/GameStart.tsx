@@ -9,12 +9,8 @@ export const GameStart = () => {
     <div className='container-start'>
     <div className='top-start'>
         <img src={logo} alt="logo" className='logo-start'/>
-    
         <button className='btn-1-start' onClick={()=>navigate('/return')}><img src={iconx} alt="" className='img-2-start'/><h3>TURN</h3></button>
-        
-    
         <button className='btn-2-start'><img src={restart} alt="" /></button>
-        
     </div>
     <div className='middle-start'>
         <button className='mid-btn-start'></button>
