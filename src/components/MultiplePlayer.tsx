@@ -8,35 +8,37 @@ import { useNavigate } from 'react-router-dom';
 export const MultiplePlayer = () => {
     const navigate = useNavigate();
   return (
-    <div className='container'>
+    <div className='container-multi'>
         <div className='top'>
-            <img src={logo} alt="logo" className='logo'/>
+            <img src={logo} alt="logo" className='logo-multi'/>
             <div>
-            <button className='btn-1' onClick={()=>navigate('/return')}><img src={iconx} alt="" className='img-2'/><h3>TURN</h3></button>
+            <button className='btn-1-multi' onClick={()=>navigate('/return')}><img src={iconx} alt="" className='img-2-multi'/><h3>TURN</h3></button>
             </div>
             <div>
-            <button className='btn-2' onClick={()=> navigate('/restart')}><img src={restart} alt="" /></button>
+            <button className='btn-2-multi' onClick={()=> navigate('/restart')}><img src={restart} alt="" /></button>
             </div>
         </div>
-        <div className='middle'>
-            <button className='mid-btn'><img src={iconxout} /></button>
-            <button className='mid-btn' ><img src={iconx} /></button>
-            <button className='mid-btn'><img src={icono} /></button>
+        <div className='mark-board'>
+        <div className='middle-multi'>
+            <button className='mid-btn-multi'><img src={iconxout}  className='multi-player-mark'/></button>
+            <button className='mid-btn-multi' ><img src={iconx}  className='multi-player-mark'/></button>
+            <button className='mid-btn-multi'><img src={icono}  className='multi-player-mark'/></button>
         </div>
-        <div className='middle-2'>
-            <button className='mid-btn'><img src={iconx} /></button>
-            <button className='mid-btn'><img src={icono} /></button>
-            <button className='mid-btn'><img src={iconx} /></button>
+        <div className='middle-2-multi'>
+            <button className='mid-btn-multi'><img src={iconx}  className='multi-player-mark'/></button>
+            <button className='mid-btn-multi'><img src={icono}  className='multi-player-mark'/></button>
+            <button className='mid-btn-multi'><img src={iconx}  className='multi-player-mark'/></button>
         </div>
-        <div className='middle-3'>
-            <button className='mid-btn'><img src=''/></button>
-            <button className='mid-btn'><img src={icono} /></button>
-            <button className='mid-btn'><img src={iconx} /></button>
+        <div className='middle-3-multi'>
+            <button className='mid-btn-multi'><img src='' className='multi-player-mark'/></button>
+            <button className='mid-btn-multi'><img src={icono}  className='multi-player-mark'/></button>
+            <button className='mid-btn-multi'><img src={iconx}  className='multi-player-mark'/></button>
         </div>
-        <div className='bottom'>
-            <button className='mid-btn-11'><span className='inside-btn'><p className='text-1'>X (P2)</p><p className='text-2'>11</p></span></button>
-            <button className='mid-btn-12'><span className='inside-btn'><p className='text-1'>TIES</p><p className='text-2'>32</p></span></button>
-            <button className='mid-btn-13' onClick={()=> navigate('/playerWon')}><span className='inside-btn'><p className='text-1'>O (P1)</p><p className='text-2'>14</p></span></button>
+        <div className='bottom-multi'>
+            <button className='mid-btn-11-multi'><span className='inside-btn-multi'><p className='text-1-multi'>X (P2)</p><p className='text-2-multi'>11</p></span></button>
+            <button className='mid-btn-12-multi'><span className='inside-btn-multi'><p className='text-1-multi'>TIES</p><p className='text-2-multi'>32</p></span></button>
+            <button className='mid-btn-13-multi' onClick={()=> navigate('/playerWon')}><span className='inside-btn-multi'><p className='text-1-multi'>O (P1)</p><p className='text-2-multi'>14</p></span></button>
+        </div>
         </div>
     </div>
   )

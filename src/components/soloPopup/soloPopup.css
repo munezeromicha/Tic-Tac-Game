@@ -2,19 +2,19 @@
 *{
     font-family: "Outfit", sans-serif;
 }
-.popup-overlay {
+.popup-overlay-solo {
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+    background-color: rgba(0, 0, 0, 0.5); 
     display: flex;
     justify-content: center;
     align-items: center;
   }
   
-  .popup-content {
+  .popup-content-solo {
     display: flex;
     flex-direction: column;
     align-content: center;
@@ -23,62 +23,60 @@
     width: 100%;
     height: 230px;
     border: none;
-    transition: all 2s ease-in-out;
   }
   
-  .button-container {
+  .button-container-solo {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 20px;
     gap: 15px;
-    width: 20%;
+    width: 100%;
   }
-  .inside-pop{
+  .inside-pop-solo{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 10px;
     gap: 10px;
   }
   
-  #text-popup{
+  #text-popup-solo{
     display: flex;
     justify-content: center;
     align-items: center;
-    color: #31C3BD;
+    color:#31C3BD;
     font-weight: bold;
-    gap: 20px;
+    gap: 35px;
     font-size: 40px;
     line-height: 2.5px;
   }
-  .p-pop{
+  .p-pop-solo{
     display: flex;
     justify-self: center;
     align-self: center;
-    text-align: center;
     color: #A8BFC9;
     font-size: 16px;
     line-height: 1px;
     font-weight: bold;
   }
-  .popup-button-quit {
-    width: 25%;
-    height: 40px;
+  .popup-button-quit-solo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 7rem;
+    height: 52px;
     background-color: #A8BFC9;
     color: #1F3641;
     font-weight: bold;
-    /* margin-left: 10px; */
     line-height: 1px;
     font-size: 16px;
     box-shadow: 0px 9px 0px 0px rgba(107,137,151,0.69);
     -webkit-box-shadow: 0px 5px 0px 0px rgba(107,137,151,0.69);
     -moz-box-shadow: 0px 9px 0px 0px rgba(107,137,151,0.69);
   }
-  .popup-button-round{
-    width: 50%;
-    height: 40px;
+  .popup-button-round-solo{
+    width: 11rem;
+    height: 52px;
     background-color: #F2B137;
     color:#1F3641;
     font-weight: bold;
@@ -87,4 +85,27 @@
     box-shadow: 0px 9px 0px -1px rgba(204,139,19,0.87);
     -webkit-box-shadow: 0px 5px 0px -1px rgba(204,139,19,0.87);
     -moz-box-shadow: 0px 9px 0px -1px rgba(204,139,19,0.87);
+  }
+  @media screen and (max-width: 768px) {
+    #text-popup-solo{
+      font-size: 40px;
+    }
+  }
+  @media screen and (max-width: 375px) {
+    .popup-button-round-solo{
+      font-size: 16px;
+      width: 10rem;
+      height: 52px;
+    }
+    .popup-button-quit-solo{
+      font-size: 16px;
+      width: 10rem;
+      height: 52px;
+    }
+    .p-pop-solo{
+      font-size: 14px;
+    }
+    #text-popup-solo{
+      font-size: 24px;
+    }
   }

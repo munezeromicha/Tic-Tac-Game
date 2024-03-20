@@ -4,7 +4,6 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  /* padding: 70px; */
   overflow-y: hidden;
   gap: 30px;
   width: 100%;
@@ -173,7 +172,6 @@
   width: 8rem;
   height: 60px;
   background-color: #31c3bd;
-
   word-wrap: break-word;
 }
 .mid-btn-12-active {
