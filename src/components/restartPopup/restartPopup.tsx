@@ -8,13 +8,13 @@ interface PopupProps {
 const Popup: React.FC<PopupProps> = ({ onClose }) => {
     const navigate = useNavigate();
   return (
-    <div className="popup-overlay" onClick={onClose}>
-      <div className="popup-content" onClick={(e) => e.stopPropagation()}>
-        <div className="inside-pop">
-        <p id="text-popup">RESTART A GAME?</p>
-        <div className="button-container">
-          <button className="popup-button-quit" onClick={onClose}>NO, CANCEL</button>
-          <button className="popup-button-round" onClick={()=>navigate('/restart')}>YES, RESTART</button>
+    <div className="popup-overlay-start" onClick={onClose}>
+      <div className="popup-content-start" onClick={(e) => e.stopPropagation()}>
+        <div className="inside-pop-start">
+        <p id="text-popup-start">RESTART A GAME?</p>
+        <div className="button-container-start">
+          <button className="popup-button-quit-start" onClick={onClose}>NO, CANCEL</button>
+          <button className="popup-button-round-start" onClick={()=>navigate('/restart')}>YES, RESTART</button>
         </div>
         </div>
       </div>
