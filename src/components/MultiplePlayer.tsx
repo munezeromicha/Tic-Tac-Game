@@ -9,14 +9,10 @@ export const MultiplePlayer = () => {
     const navigate = useNavigate();
   return (
     <div className='container-multi'>
-        <div className='top'>
+        <div className='top-multi'>
             <img src={logo} alt="logo" className='logo-multi'/>
-            <div>
             <button className='btn-1-multi' onClick={()=>navigate('/return')}><img src={iconx} alt="" className='img-2-multi'/><h3>TURN</h3></button>
-            </div>
-            <div>
             <button className='btn-2-multi' onClick={()=> navigate('/restart')}><img src={restart} alt="" /></button>
-            </div>
         </div>
         <div className='mark-board'>
         <div className='middle-multi'>

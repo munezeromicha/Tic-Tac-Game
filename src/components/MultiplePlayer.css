@@ -3,7 +3,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    overflow-y: none;
+    /* overflow-y: none; */
     gap: 30px;
     width: 100%;
 }
